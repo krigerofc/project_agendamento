@@ -1,0 +1,231 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    margin-top: 10px;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+footer {
+  position: fixed;      
+  bottom: 0;          
+  left: 0;        
+  width: 100%;  
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1); 
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;    
+}
+
+/* Geral */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  font-family: Arial, sans-serif;
+  color: #222;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Título principal */
+main > h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #2563EB; /* azul royal */
+}
+
+/* Seções */
+.section-agendamentos {
+  margin-bottom: 40px;
+}
+
+/* Título das seções */
+.section-agendamentos > h2,
+.section-novo-agendamento > h2 {
+  border-bottom: 2px solid #2563EB;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color: #2563EB;
+}
+
+/* Container dos agendamentos */
+.agendamento {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.agendamento:hover {
+  box-shadow: 0 4px 8px rgb(0 0 0 / 0.15);
+}
+
+.agendamento.past {
+  background-color: #f3f3f3;
+  color: #888;
+  border-color: #bbb;
+}
+
+/* Título do agendamento */
+.agendamento h3 {
+  margin: 0 0 8px;
+  color: #1e40af;
+}
+
+/* Texto do agendamento */
+.agendamento p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Links de ação */
+.actions {
+  margin-top: 12px;
+}
+
+.actions a {
+  text-decoration: none;
+  color: #2563EB;
+  font-weight: 600;
+  margin-right: 15px;
+  transition: color 0.2s ease;
+}
+
+.actions a:hover {
+  color: #facc15; /* amarelo vibrante */
+}
+
+/* Formulário novo agendamento */
+.section-novo-agendamento form {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
+}
+
+/* Labels */
+.section-novo-agendamento label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs e textarea */
+.section-novo-agendamento input[type="text"],
+.section-novo-agendamento input[type="datetime-local"],
+.section-novo-agendamento textarea {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.section-novo-agendamento input[type="text"]:focus,
+.section-novo-agendamento input[type="datetime-local"]:focus,
+.section-novo-agendamento textarea:focus {
+  border-color: #2563EB;
+  outline: none;
+}
+
+/* Botão */
+.section-novo-agendamento button {
+  background-color: #2563EB;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: background-color 0.3s ease;
+}
+
+.section-novo-agendamento button:hover {
+  background-color: #1e40af;
+}
