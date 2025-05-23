@@ -33,6 +33,8 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 3. Inicie o xamp apache e mysql
 
 4. crie um banco de dados chamado project_agendamentos, caso tenha senha em seu banco ou portas diferentes é configuravel na pasta config
+![image](https://github.com/user-attachments/assets/0d7d24d5-17fd-478b-ba49-0cd1c16342da)
+
 
 5. utilize o seguinte comando para criar seu DB!
 
