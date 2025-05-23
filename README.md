@@ -39,12 +39,13 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 ```bash
 CREATE TABLE appointments (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    data_inicial DATETIME NOT NULL,
-    data_final DATETIME NOT NULL,
-    titulo VARCHAR(255) NOT NULL,
-    descricao TEXT,
-    nome_cliente VARCHAR(255) NOT NULL,
+    start_date DATETIME NOT NULL,
+    end_date DATETIME NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    client_name VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
+6. acesse o link http://localhost/(nome da pasta que está o projeto/ 
