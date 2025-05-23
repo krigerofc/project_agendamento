@@ -50,4 +50,4 @@ CREATE TABLE appointments (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
-6. acesse o link http://localhost/(nome da pasta que está o projeto/ 
+6. acesse o link http://localhost/project_agendamento/
