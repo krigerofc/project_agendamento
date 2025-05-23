@@ -26,7 +26,7 @@ Um sistema simples de agendamentos desenvolvido em PHP com MySQL, utilizando o p
 ## 🧪 Como Executar o Projeto
 
 1. Clone este repositório:
-git clone https://github.com/seu-usuario/seu-repositorio.git
+git clone https://github.com/krigerofc/project_agendamento.git
 
 2. Localize sua pasta C:\xampp\htdocs e coloque a pasta do projeto lá
 
@@ -36,7 +36,7 @@ git clone https://github.com/seu-usuario/seu-repositorio.git
 ![image](https://github.com/user-attachments/assets/0d7d24d5-17fd-478b-ba49-0cd1c16342da)
 
 
-5. utilize o seguinte comando para criar seu DB!
+5. utilize o seguinte comando para criar sua table!
 
 ```bash
 CREATE TABLE appointments (
