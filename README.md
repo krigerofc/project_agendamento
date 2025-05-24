@@ -32,15 +32,10 @@ git clone https://github.com/krigerofc/project_agendamento.git
 
 3. Inicie o xamp apache e mysql
 
-4. crie um banco de dados chamado ```project_agendamentos```, caso tenha senha em seu banco ou portas diferentes é configuravel /config
-
-5. 
-![image](https://github.com/user-attachments/assets/0d7d24d5-17fd-478b-ba49-0cd1c16342da)
-
-
-6. utilize o seguinte comando para criar sua table!
-
+4. Crie o banco de dados usando o seguinte script:
 ```bash
+CREATE DATABASE project_agendamentos;
+
 CREATE TABLE appointments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     start_date DATETIME NOT NULL,
@@ -52,4 +47,5 @@ CREATE TABLE appointments (
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
 ```
+
 6. acesse o link http://localhost/project_agendamento/
