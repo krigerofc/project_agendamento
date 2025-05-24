@@ -31,7 +31,7 @@ class AppointmentController {
     public function create($data) {
         try {
             $this->model->create($data);
-            header('Location: /job');
+            header('Location: /project_agendamento');
             exit;
         } catch (Exception $e) {
             $this->handleError($e);
@@ -42,12 +42,12 @@ class AppointmentController {
     public function show($id) {
         try {
             if (!$id) {
-                header('Location: /job');
+                header('Location: /project_agendamento');
                 exit;
             }
             $appointment = $this->model->getById($id);
             if (!$appointment) {
-                header('Location: /job');
+                header('Location: /project_agendamento');
                 exit;
             }
             require __DIR__ . '/../views/edit.php';
@@ -60,11 +60,11 @@ class AppointmentController {
     public function update($id, $data) {
         try {
             if (!$id) {
-                header('Location: /job');
+                header('Location: /project_agendamento');
                 exit;
             }
             $this->model->update($id, $data);
-            header('Location: /job');
+            header('Location: /project_agendamento');
             exit;
         } catch (Exception $e) {
             $this->handleError($e);
@@ -78,7 +78,7 @@ class AppointmentController {
                 exit;
             }
             $this->model->delete($id);
-            header('Location: /job');
+            header('Location: /project_agendamento');
             exit;
         } catch (Exception $e) {
             $this->handleError($e);
