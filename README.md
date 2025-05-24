@@ -35,7 +35,8 @@ git clone https://github.com/krigerofc/project_agendamento.git
 4. Crie o banco de dados usando o seguinte script:
 ```bash
 CREATE DATABASE project_agendamentos;
-
+```
+```bash
 CREATE TABLE appointments (
     id INT AUTO_INCREMENT PRIMARY KEY,
     start_date DATETIME NOT NULL,
