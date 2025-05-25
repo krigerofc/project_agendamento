@@ -88,4 +88,27 @@
   </form>
 </section>
 </main>
+<script>
+  document.querySelectorAll('a[href*="action=delete"]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      if (!confirm('Tem certeza que deseja excluir este agendamento?')) {
+        e.preventDefault();
+      }
+    });
+  });
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const formSection = document.querySelector('.section-novo-agendamento');
+    const title = formSection.querySelector('h2');
+    const isEditing = title.textContent.includes('Editar');
+
+    if (isEditing) {
+      title.style.backgroundColor = '#facc15'; 
+      title.style.color = 'black'; 
+      title.style.padding = '10px 15px';
+      title.style.borderRadius = '8px';
+    }
+  });
+
+</script>
 
