@@ -20,6 +20,9 @@ Um sistema simples de agendamentos desenvolvido em PHP com MySQL, utilizando o p
 - PHP (sem frameworks)
 - MySQL
 - HTML/CSS
+- JS (Puro)
+
+OBS: a escolha de não usar framworks foi para dificultar a criação e entender um pouco melhor do php
 
 ---
 
@@ -32,7 +35,7 @@ git clone https://github.com/krigerofc/project_agendamento.git
 
 3. Inicie o xamp apache e mysql
 
-4. Crie o banco de dados usando o seguinte script:
+4. Crie o banco de dados usando o seguinte script ou use o .sql que foi adicionado ao projeto:
 ```bash
 CREATE DATABASE project_agendamentos;
 ```
